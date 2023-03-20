@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
+
 import styles from './page.module.css';
 
 const inter = Inter({
@@ -20,7 +21,6 @@ export default function Home(): React.ReactElement {
             target="_blank"
             rel="noopener noreferrer"
           >
-            By{' '}
             <Image
               src="/vercel.svg"
               alt="Vercel Logo"
