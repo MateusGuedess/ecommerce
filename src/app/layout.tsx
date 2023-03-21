@@ -1,3 +1,5 @@
+import { GlobalStyle } from 'app/GlobalStyle';
+import StyledComponentsRegistry from 'registry';
 import './globals.css';
 
 export const metadata = {
@@ -12,7 +14,10 @@ export default function RootLayout({
 }): React.ReactElement {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <GlobalStyle />
+        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+      </body>
     </html>
   );
 }
