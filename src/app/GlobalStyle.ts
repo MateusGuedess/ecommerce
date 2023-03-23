@@ -10,6 +10,8 @@ export const GlobalStyle = createGlobalStyle`
 
     box-sizing: border-box;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
 `;
