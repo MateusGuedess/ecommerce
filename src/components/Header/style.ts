@@ -5,6 +5,8 @@ import styled, { css } from 'styled-components';
 export const Container = styled.section`
   ${(props) => {
     const grayshBlue = props?.theme?.neutral?.grayshBlue;
+    const darkGrayshBlue = props?.theme?.neutral?.darkGrayshBlue;
+    const orange = props?.theme?.primary?.base;
 
     return css`
       width: 1440px;
@@ -22,6 +24,16 @@ export const Container = styled.section`
           margin-left: 15px;
           font-size: 16px;
           color: ${grayshBlue};
+          transition: border-bottom ease 0.3s;
+
+          &:hover {
+            border-bottom: 4px solid ${orange};
+            margin-top: 4px;
+            line-height: 76px;
+            color: ${darkGrayshBlue}
+            
+          }
+          }
         }
       }
     `;
