@@ -24,7 +24,7 @@ interface ThemeProps {
   neutral: {
     veryDarkBlue: string;
     darkGrayshBlue: string;
-    grayshBlue: string;
+    grayshBlue: any;
     lightGrayshBlue: string;
     white: string;
     black: string;
